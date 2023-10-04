@@ -1,0 +1,64 @@
+https://flexboxfroggy.com/#fr
+
+#parent{
+	display: flex;
+	
+	justify-content: 	allinea gli elementi ORIZZONTALMENTE
+		flex-start / flex-end/ center /space-between/ space-around
+
+
+	align-items: 		 allinea gli elementi VERTICALMENTE
+		flex-start / flex-end/ center /baseline/ stretch
+
+}
+-------------------------------------
+EXO: Rana al centro della pag:
+#parent{
+	display: flex;
+	align-items: center;
+	justify-content: center; }
+-------------------------------------
+#parent{
+	display: flex;
+	flex-direction:		questa proprietà definisce la direzione in cui gli elementi verranno posizionati
+		ossia se dal primo all'ultimo o dall'ultimo al primo [utile x un blog dove vedo prima l'ultimo articolo]
+
+		row: prima il primo e poi l'ultimo.
+		row-reverse: prima l'ultimo e poi il primo  --> inverte la direction di justify-content
+		column: Gli elementi sono posizionati dall'alto verso il basso IN COLONNA.
+		column-reverse: Gli elementi sono posizionati dal basso verso l'alto IN COLONNA e invertiti
+			(perché inizia dal basso a posizionare il primo enfant).
+}
+NB: RANE invertite e a DX
+  flex-direction: row-reverse; --> inverte l'ordine dall'ultimo al primo, MA ANCHE LA DIREZIONE
+  justify-content: flex-end --> per poter spingere le rane a SIN (perché la direzione é invertita)
+
+NBB: Nota che quando la direzione flex è COLUMN, justify-content cambia l'allineamento VERTICALE e 
+	align-items quello ORIZZONTALE
+____________________________________________________________________________________________________________
+PROPRIETA' CHE AGISTONO SUI SINGOLI ELEMENTI
+#parent{
+	display: flex;}
+#ENFANT{
+	order: permette di dire in che ordine deve visualizzarsi un elemento, AGENDO  sui singoli elementi.
+		à:= default --> -n° a + n°  }
+
+#ENFANT{
+	align-self :  --> vcorrispondente di align-items, ma sull'elemento
+
+______________________________________________________________________________________________________________
+#parent{
+	display: flex;
+	flex-wrap: nowrap: Ogni elemento viene sistemato nella stessa riga.
+		wrap: Gli elementi vengono sistemati su più righe se non c'è spazio per tutti su una sola riga.
+		wrap-reverse: Gli elementi vengono disposti su più righe in ordine inverso.
+	flex-direction --> spesso insieme}
+	flex-flow = flex-direction + flex-wrap
+
+
+#parent{
+	display: flex;
+	flex-wrap:wrap;
+	align-content:	 per decidere come le linee verranno distanziate tra di loro.
+		flex-start/ flex-end/ center/ space-between/ space-around/ stretch }
+	

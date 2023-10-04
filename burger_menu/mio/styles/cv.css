@@ -85,35 +85,3 @@ e allora questo diventa solo
         }
     }
 } */
-
-.button-top-fix{
-    position: fixed;
-    /* poi bisogna dire fissato dove */
-    right: 20px;
-    bottom: 20px;
-    z-index: 100;
-    background-color: rgba(127, 255, 212, 0.267);
-    border-radius: 3px;
-    padding: 10px;
-    color: rgb(38, 0, 255);
-
-}
-.email{
-    position: relative;
-    margin:20px;
-}
-.email > input{
-    padding-left: 20px;
-}
-
-/* ::after mi va a CREARE un block dopo */
-.email::after{
-    content: '♥';
-    display: inline-block;  /* cosi' il cuore resta fisso nell'input */
-    position: absolute;
-    left: 5px;
-    top:0;
-    font-family: 'Font Awesome 5 Freee';
-    font-weight: bold;
-}
-/* ♥ alt 3 */

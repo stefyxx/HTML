@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+}
+ 
+body {
+    margin : 0;
+}
+/* menu' navigaziuone */
+nav {
+    border-bottom: 1px solid black;
+    background-color: aliceblue;
+}
+ul {
+    padding:0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content:space-around;
+}  
+a {
+    color : black;
+    display: inline-block;
+    text-decoration: none;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}  
+a:hover {
+    background-color: cadetblue;
+}
+@media screen and (min-width: 768px) {
+    ul{
+        flex-direction: row;
+    }
+    
+}
+#menu{
+    height: 50px;
+    width: 50px;
+    top: 20px;
+    left: 20px;
+    position: fixed;  /* fissa ma relativa --> ecco x! le 3 div 'linee' possono essere in absolute */
+    flex-direction: column;
+    align-items: center;
+}
+
+#menu > div{
+    height: 10px;
+    width: 50px;
+    background-color: black;
+    position: absolute;
+    transition: all 0.3s ease;
+}
+#menu > div:first-child{
+    transform: translateY(-20px);
+}
+#menu > div:last-child{
+    transform: translateY(20px);
+}
+/* linea centrale */
+#menu:hover > div:nth-child(2){
+    opacity: 0;
+}
+#menu:hover > div:first-child{
+    transform: rotate(45deg);
+}
+#menu:hover > div:last-child{
+    transform: rotate(-45deg);
+}

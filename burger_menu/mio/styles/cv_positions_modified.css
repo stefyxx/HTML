@@ -86,6 +86,7 @@ e allora questo diventa solo
     }
 } */
 
+/*____________________________*/
 .button-top-fix{
     position: fixed;
     /* poi bisogna dire fissato dove */
@@ -98,9 +99,17 @@ e allora questo diventa solo
     color: rgb(38, 0, 255);
 
 }
+
+/* ___________________________ */
+/* Position relative and absolute  */
+.icon{
+    position: absolute;
+    top: 2px;
+    left: 5px;
+}
+
 .email{
     position: relative;
-    margin:20px;
 }
 .email > input{
     padding-left: 20px;
@@ -109,7 +118,7 @@ e allora questo diventa solo
 /* ::after mi va a CREARE un block dopo */
 .email::after{
     content: '♥';
-    display: inline-block;  /* cosi' il cuore resta fisso nell'input */
+    display: inline-block;
     position: absolute;
     left: 5px;
     top:0;

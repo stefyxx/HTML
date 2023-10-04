@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <form action="" method="post">
+        <label for="id-myInput">Nom:</label>
+        <input id="id-myInput"
+            name="myInput" type="text"
+            placeholder="scrivi"
+            value="Jon"
+            minlength="2"
+            required>
+            <!-- se in internet cancello Jon, appare il placeholder -->
+        <br>
+            <label for="id-myEmail">Email:</label>
+        <!-- type mail guarda solo che ci sia @ -->
+            <input type="email" name="" id="id-myEmail"
+            disabled>
+        <br>
+        <label for="id-myPSW">Password:</label>
+        <!-- type psw é solo x mettere le stelline -->
+        <input type="password" name="" id="id-myPSW">
+        <br>
+        <label for="id-my-Link">Lien:</label>
+        <input type="url" name="" id="id-my-Link">
+        <br>
+        <label for="id-myNumber">Anni di esperienza</label>
+        <input type="number" name="" id="id-myNumber" min="0" max="30">
+        <br>
+        <label for="id-myNationalData">Inserire il n nazionale</label>
+        <input type="text" name="" id="id-myNationalData"
+        pattern="[0-9]{2}.[0-9]{2}.[0-9]{2}-[0-9]{3}.[0-9]{2}">
+        <br>
+        <label for="id-myDate">Data di nascita:</label>
+        <input type="date" name="" id="">
+        <br>
+        <label for="id-myColor">Color:</label>
+        <input type="color" name="" id="id-myColor">
+        <div>
+            <label for="id-myCheck"></label>
+            <input type="checkbox" name="" id="id-myCheck">
+        </div>
+        <div>
+            <label for="fille">Fille:</label>
+            <input type="radio" name="genre" id="fille" value="fille">
+            <label for="garçon">Garçon</label>
+            <input type="radio" name="genre" id="garçon" value="garçon">
+        </div>
+        <div>
+            <select name="country" id="">
+                <option value="be">Belgique</option>
+                <option value="it">Italie</option>
+                <option value="fr">France</option>
+            </select>
+        </div>
+        <div>
+            <input list="voiture">
+            <!-- ma posso scrivere quello che voglio -->
+            <datalist id="voiture">
+                <option value="Audi">Audi</option>
+                <option value="Ford">Ford</option>
+                <option value="Lamborghini">Lamborghini</option>
+                <option value="Fiat">Fiat</option>
+                <option value="Jaguar">Jaguar</option> 
+            </datalist>
+            
+        </div>
+
+        <button>save</button>
+    </form>
+    
+</body>
+</html>

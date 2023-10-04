@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="styles/cv.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>CV del prof:Donald Trump</title>
 </head>
 <body>
+    <!-- nav.myClass>lu>(li>a[href=#].myClass2)*5 -->
+
     <section id="personal-info">
+        <!-- id="personal-info" diventerà il pt di atterraggio della mia ancora -->
         <h1>Informations personelles</h1>
         <img src="https://photos.tf1info.fr/images/700/700/trumpmugshotok-8ae321-0@1x.jpeg" alt="photo de Donald Trump">
         <dl>
@@ -18,13 +24,14 @@
             <dt>Email</dt>
             <dd><a href="mailto:d.trump@gmail.com">d.trump@gmail.com</a></dd>
             <dt>Tel</dt>
+
             <!-- dd>a[href=tel:+32471858585]{0471/85.85.85} -->
             <dd><a href="tel:+32471858585">0471/85.85.85</a></dd>
+        
         </dl>
     </section>
     <section id="skills">
         <h1>Compétences</h1>
-        <!-- lista di competenze -->
         <ul>
             <li>Connaissances du menu McDonald</li>
             <li>Construction du mur</li>
@@ -37,7 +44,9 @@
     <section id="studies">
         <!-- alt 0 200 := é maiuscola -->
         <h1>Ètudes</h1>
+
         <!-- table>(thead>tr>th*3)+tbody>tr*3>td*3 -->
+
         <table>
             <thead>  <!--  testo x default allineato a DX -->
                 <tr>
@@ -67,5 +76,13 @@
             </tbody>
         </table>
     </section>
+    <a class="button-top-fix" href="#personal-info"><i class="fa-solid fa-arrow-up"></i></a>
+
+    <!-- div sarà in posizioàne RELATIVA -->
+    <div class="email">
+        <!-- input con l'icona sarà in posizione ASSOLUTA -->
+        <input type="text"></i>
+    </div>
+    
 </body>
 </html>
