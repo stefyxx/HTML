@@ -1,0 +1,37 @@
+/* @import    fontFamiliLink   */
+
+li:nth-child(2n){
+    color: red;
+}
+.firstClass{
+    font-family: fantasy;
+    font-size: 20px;
+    color: blue;
+    font-weight: lighter;
+    text-transform: capitalize;
+    text-decoration: line-through; /* barrato */
+    
+}
+p{
+    min-height: 100px;
+    /*width: 100px;*/
+    overflow: hidden; /* tutto quello che é fuori la grandezza di p non renderlo visibile*/
+    overflow-y: scroll; /* tutto il testo che fuoriesce da p fallo con scroll*/
+}
+
+.monoline{  /* testo che depassa appare come:= [...]  */
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+/*  sfondo  */
+.cover{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.bacImage{  /* tutto in una proprietà */
+    background: url(), repeat, 100px;
+    box-sizing: border-box;
+}
